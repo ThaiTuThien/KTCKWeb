@@ -1,4 +1,4 @@
-import 'package:api_statemanagement/screens/add_edit_product_screen.dart';
+import 'package:api_statemanagement/screens/edit_product_screen.dart';
 import 'package:api_statemanagement/screens/edit_product.dart';
 import 'package:api_statemanagement/screens/product_detail.dart';
 import 'package:flutter/material.dart';
@@ -43,6 +43,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(title: Text('Products')),
       body: RefreshIndicator(
         onRefresh: _refreshProducts, 

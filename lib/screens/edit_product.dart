@@ -39,6 +39,7 @@ class _AddEditProductScreenState extends State<EditProductScreen> {
     final provider = Provider.of<ProductProvider>(context);
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(title: Text(widget.product == null ? 'Add Product' : 'Edit Product')),
       body: Padding(
         padding: EdgeInsets.all(16.0),
