@@ -39,6 +39,7 @@ class _AddEditProductScreenState extends State<AddProductScreen> {
     final provider = Provider.of<ProductProvider>(context);
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(title: Text(widget.product == null ? 'Add Product' : 'Edit Product')),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -86,8 +87,6 @@ class _AddEditProductScreenState extends State<AddProductScreen> {
                     };
                     if (widget.product == null) {
                       provider.createProduct(productData);
-                    } else {
-                      // Logic update sẽ được thêm sau
                     }
                     Navigator.pop(context);
                   }
