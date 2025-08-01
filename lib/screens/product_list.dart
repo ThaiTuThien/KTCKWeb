@@ -73,7 +73,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ProductDetailScreen(),
+                        builder: (context) => ProductDetailScreenModern(),
                       ),
                     );
                   },
